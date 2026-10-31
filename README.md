@@ -4,16 +4,19 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Docs](https://img.shields.io/badge/docs-github.io-blue)](https://dlrsp.github.io/django-food-recipes/)
 
-Core recipe models for Django: taxonomy (diet, cooking, type, category),
-recipe steps, tips, alternatives, and ingredient quantities. Depends on
-`django-ingredients` (and transitively `django-allergens`). Uses django-filer
-for images and modeltranslation for translatable fields.
+Reusable **recipe domain models** for Django: diets, cooking methods, types,
+categories, steps, tips, alternatives, and ingredient quantities.
 
-**No recipe content fixtures** ship in this package — only catalog dependencies
-live upstream.
+## Why use it
 
-Default language is **English**. Italian URL prefixes (`ricette/`, `diete/`, …)
-ship via gettext.
+- Model complete recipes without reinventing taxonomy and quantity links
+- Connect to the shared ingredient and allergen catalogs
+- Multilingual public routes (English default; Italian prefixes such as
+  `ricette/`, `diete/`)
+- Image fields via django-filer for admin and site presentation
+
+Recipe **content** is owned by your site — this package provides the schema and
+integration points, not editorial fixtures.
 
 ## Requirements
 
