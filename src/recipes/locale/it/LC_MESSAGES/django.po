@@ -410,3 +410,33 @@ msgstr "Vitamina D (colecalciferolo) [μg]"
 
 msgid "Vitamin E (tocopherol) [mg]"
 msgstr "Vitamina E (tocoferolo) [mg]"
+
+msgid "diets/"
+msgstr "diete/"
+
+msgid "diets/<slug:slug_diet>/"
+msgstr "diete/<slug:slug_diet>/"
+
+msgid "cooking/"
+msgstr "tipi-cottura/"
+
+msgid "cooking/<slug:slug_cook>/"
+msgstr "tipi-cottura/<slug:slug_cook>/"
+
+msgid "types/"
+msgstr "piatto/"
+
+msgid "types/<slug:slug_type>/"
+msgstr "piatto/<slug:slug_type>/"
+
+msgid "subtypes/<slug:slug>/"
+msgstr "sottotipi/<slug:slug>/"
+
+msgid "categories/"
+msgstr "categorie/"
+
+msgid "categories/<slug:slug_cat>/"
+msgstr "categorie/<slug:slug_cat>/"
+
+msgid "recipes/<slug:slug>/"
+msgstr "ricette/<slug:slug>/"

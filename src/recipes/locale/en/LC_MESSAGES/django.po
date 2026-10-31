@@ -1,0 +1,46 @@
+# English catalog for django-food-recipes (source language; msgid == msgstr).
+msgid ""
+msgstr ""
+"Project-Id-Version: django-food-recipes 0.1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"Language: en\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+msgid "Recipes"
+msgstr "Recipes"
+
+msgid "Recipe"
+msgstr "Recipe"
+
+msgid "diets/"
+msgstr "diets/"
+
+msgid "diets/<slug:slug_diet>/"
+msgstr "diets/<slug:slug_diet>/"
+
+msgid "cooking/"
+msgstr "cooking/"
+
+msgid "cooking/<slug:slug_cook>/"
+msgstr "cooking/<slug:slug_cook>/"
+
+msgid "types/"
+msgstr "types/"
+
+msgid "types/<slug:slug_type>/"
+msgstr "types/<slug:slug_type>/"
+
+msgid "subtypes/<slug:slug>/"
+msgstr "subtypes/<slug:slug>/"
+
+msgid "categories/"
+msgstr "categories/"
+
+msgid "categories/<slug:slug_cat>/"
+msgstr "categories/<slug:slug_cat>/"
+
+msgid "recipes/<slug:slug>/"
+msgstr "recipes/<slug:slug>/"

@@ -5,12 +5,18 @@ from django.db import models
 from django.template.defaultfilters import slugify
 from django.urls import reverse
 from django.utils import timezone
-from django.utils.translation import gettext_lazy as _
+from django.utils.translation import get_language, gettext_lazy as _
 from filer.fields.image import FilerImageField
 
 from recipes.constants import IQ_GROUP, IQ_UNIT
 
 not_negative = MinValueValidator(0)
+
+
+def _active_slug(obj, field="slug"):
+    lang = (get_language() or "en").split("-")[0]
+    value = getattr(obj, f"{field}_{lang}", None)
+    return value or getattr(obj, field)
 
 
 class Diet(models.Model):
@@ -34,7 +40,9 @@ class Diet(models.Model):
         return self.name
 
     def get_absolute_url(self):
-        return reverse("diet-detail", kwargs={"slug_diet": self.slug})
+        return reverse(
+            "diet-detail", kwargs={"slug_diet": _active_slug(self)}
+        )
 
     def save(self, *args, **kwargs):
         if not self.slug:
@@ -62,7 +70,9 @@ class Cooking(models.Model):
         return self.name
 
     def get_absolute_url(self):
-        return reverse("cooking-detail", kwargs={"slug_cook": self.slug})
+        return reverse(
+            "cooking-detail", kwargs={"slug_cook": _active_slug(self)}
+        )
 
     def save(self, *args, **kwargs):
         if not self.slug:
@@ -115,7 +125,9 @@ class Type(models.Model):
         return self.name
 
     def get_absolute_url(self):
-        return reverse("type-detail", kwargs={"slug_type": self.slug})
+        return reverse(
+            "type-detail", kwargs={"slug_type": _active_slug(self)}
+        )
 
     def save(self, *args, **kwargs):
         if not self.slug:
@@ -143,7 +155,9 @@ class SubType(models.Model):
         return self.name
 
     def get_absolute_url(self):
-        return reverse("subtype-detail", kwargs={"slug": self.slug})
+        return reverse(
+            "subtype-detail", kwargs={"slug": _active_slug(self)}
+        )
 
     def save(self, *args, **kwargs):
         if not self.slug:
@@ -190,7 +204,9 @@ class RecipeCategory(models.Model):
         return self.name
 
     def get_absolute_url(self):
-        return reverse("category-detail", kwargs={"slug_cat": self.slug})
+        return reverse(
+            "category-detail", kwargs={"slug_cat": _active_slug(self)}
+        )
 
     def save(self, *args, **kwargs):
         if not self.slug:
@@ -420,7 +436,9 @@ class Recipe(models.Model):
         return self.publish >= timezone.now() - datetime.timedelta(days=1)
 
     def get_absolute_url(self):
-        return reverse("recipe-detail", kwargs={"slug": self.slug})
+        return reverse(
+            "recipe-detail", kwargs={"slug": _active_slug(self)}
+        )
 
     def save(self, *args, **kwargs):
         if not self.slug:

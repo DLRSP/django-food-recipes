@@ -8,6 +8,7 @@ from pathlib import Path
 from django.core.management import call_command
 from django.db import connection
 from django.test import TestCase
+from django.utils import translation
 
 from ingredients.models import Ingredient, IngredientCategory, IngredientType
 from recipes.constants import IQ_GROUP, IQ_UNIT
@@ -76,7 +77,28 @@ class RecipeModelTests(TestCase):
         )
         self.assertEqual(recipe.ingredient_quantities.count(), 1)
         self.assertEqual(recipe.steps.count(), 1)
-        self.assertIn("/recipes/test-pasta/", recipe.get_absolute_url())
+        with translation.override("en"):
+            self.assertIn("/recipes/test-pasta/", recipe.get_absolute_url())
+
+    def test_reverse_en_and_it_path_prefixes(self):
+        from django.urls import clear_url_caches, reverse, set_urlconf
+
+        clear_url_caches()
+        set_urlconf("tests.urls")
+        with translation.override("en"):
+            url_en = reverse("diet-detail", kwargs={"slug_diet": "vegan"})
+        with translation.override("it"):
+            url_it = reverse("diet-detail", kwargs={"slug_diet": "vegano"})
+        self.assertIn("/diets/", url_en)
+        self.assertIn("/diete/", url_it)
+
+    def test_filer_stack_importable(self):
+        import easy_thumbnails  # noqa: F401
+        import filer  # noqa: F401
+        import mptt  # noqa: F401
+        import polymorphic  # noqa: F401
+
+        self.assertTrue(True)
 
     def test_core_recipe_has_no_seo_or_social_fields(self):
         field_names = {f.name for f in Recipe._meta.get_fields()}

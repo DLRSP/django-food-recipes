@@ -1,39 +1,14 @@
 # django-food-recipes
 
-Template repository for a **reusable Django app** published on PyPI. After you clone and rename, replace the placeholder import package `recipes` and the distribution name `django-food-recipes` across the tree (see the checklist in `README.md`).
+Core Django recipe models: diets, cooking methods, types, categories, recipes,
+steps, and ingredient quantities. Depends on `django-ingredients` (and thus
+`django-allergens`).
 
----
+Recipe **content** is not seeded by this package — use admin or a consumer
+import. Taxonomy rows are created by the site.
 
-## Requirements
+## Links
 
-- Python 3.10+
-- Django 3.2+ (see `pyproject.toml` for declared compatibility)
-
----
-
-## Installation
-
-```shell
-pip install django-food-recipes
-```
-
-Add the app to `INSTALLED_APPS` using your real module name (after renaming from `recipes`):
-
-```python
-INSTALLED_APPS = [
-    # ...
-    "recipes",
-    # ...
-]
-```
-
----
-
-## Documentation
-
-Full docs are built with [MkDocs](https://www.mkdocs.org/) (Material theme). From the repo root:
-
-```shell
-pip install -e ".[docs]"
-mkdocs serve
-```
+- [Install](install.md)
+- [Usage](usage.md)
+- [GitHub](https://github.com/DLRSP/django-food-recipes)

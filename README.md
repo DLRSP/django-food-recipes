@@ -2,6 +2,7 @@
 
 [![CI](https://github.com/DLRSP/django-food-recipes/actions/workflows/ci.yaml/badge.svg)](https://github.com/DLRSP/django-food-recipes/actions/workflows/ci.yaml)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![Docs](https://img.shields.io/badge/docs-github.io-blue)](https://dlrsp.github.io/django-food-recipes/)
 
 Core recipe models for Django: taxonomy (diet, cooking, type, category),
 recipe steps, tips, alternatives, and ingredient quantities. Depends on
@@ -11,12 +12,15 @@ for images and modeltranslation for translatable fields.
 **No recipe content fixtures** ship in this package — only catalog dependencies
 live upstream.
 
+Default language is **English**. Italian URL prefixes (`ricette/`, `diete/`, …)
+ship via gettext.
+
 ## Requirements
 
 - Python 3.10+
 - Django 4.2+
 - django-ingredients
-- django-filer
+- django-filer (+ mptt, easy-thumbnails, polymorphic)
 - django-modeltranslation
 
 ## Install
@@ -31,6 +35,8 @@ INSTALLED_APPS = [
     # ...
     "easy_thumbnails",
     "filer",
+    "mptt",
+    "polymorphic",
     "allergens",
     "ingredients",
     "recipes",
@@ -41,13 +47,7 @@ INSTALLED_APPS = [
 python manage.py migrate
 ```
 
-## Scope notes
-
-Core only: times, yield, nutrition integers, publish flags, aphorism, Filer
-image. SEO/social/referral/tags/flags/comments stay in the consumer site.
-
-Quantity `group` / `quantity_unit` values are English stable codes; Italian
-labels are in `locale/it`.
+Include `recipes.urls` inside `i18n_patterns` for translated path prefixes.
 
 ## License
 
