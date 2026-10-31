@@ -175,7 +175,7 @@ package = "recipes"
 package_dir = "src"
 filename = "CHANGELOG.rst"
 directory = "news/"
-version = "0.1.0"
+version = "0.1.1"
 issue_format = "`#{issue} <https://github.com/DLRSP/django-food-recipes/issues/{issue}>`_"
 type = [
   { name = "Process",                   directory = "process", showcontent = true },
@@ -189,7 +189,7 @@ type = [
 
 # bump-my-version
 [tool.bumpversion]
-current_version = "0.1.0"
+current_version = "0.1.1"
 commit = true
 tag = true
 allow_dirty = true
