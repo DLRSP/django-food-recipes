@@ -1,0 +1,412 @@
+# Italian translations for django-food-recipes.
+msgid ""
+msgstr ""
+"Project-Id-Version: django-food-recipes 0.1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"Language: it\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+msgid "Recipes"
+msgstr "Ricette"
+
+msgid "Recipe"
+msgstr "Ricetta"
+
+msgid "Diet"
+msgstr "Dieta"
+
+msgid "Diets"
+msgstr "Diete"
+
+msgid "Cooking method"
+msgstr "Metodo di cottura"
+
+msgid "Cooking methods"
+msgstr "Metodi di cottura"
+
+msgid "Recipe origin"
+msgstr "Origine ricetta"
+
+msgid "Recipe origins"
+msgstr "Origini ricetta"
+
+msgid "Recipe type"
+msgstr "Tipo di ricetta"
+
+msgid "Recipe types"
+msgstr "Tipi di ricetta"
+
+msgid "Recipe sub-type"
+msgstr "Sottotipo di ricetta"
+
+msgid "Recipe sub-types"
+msgstr "Sottotipi di ricetta"
+
+msgid "Recipe yield unit"
+msgstr "Unità di resa"
+
+msgid "Recipe yield units"
+msgstr "Unità di resa"
+
+msgid "Recipe category"
+msgstr "Categoria di ricetta"
+
+msgid "Recipe categories"
+msgstr "Categorie di ricetta"
+
+msgid "Recipe tip"
+msgstr "Consiglio"
+
+msgid "Recipe tips"
+msgstr "Consigli"
+
+msgid "Recipe alternative"
+msgstr "Alternativa"
+
+msgid "Recipe alternatives"
+msgstr "Alternative"
+
+msgid "Recipe step"
+msgstr "Passo"
+
+msgid "Recipe steps"
+msgstr "Passi"
+
+msgid "Recipe step name"
+msgstr "Nome passo"
+
+msgid "Recipe step names"
+msgstr "Nomi passo"
+
+msgid "Ingredient quantity"
+msgstr "Quantità ingrediente"
+
+msgid "Ingredient quantities"
+msgstr "Quantità ingredienti"
+
+msgid "Name"
+msgstr "Nome"
+
+msgid "Slug"
+msgstr "Slug"
+
+msgid "Title"
+msgstr "Titolo"
+
+msgid "Description"
+msgstr "Descrizione"
+
+msgid "Image"
+msgstr "Immagine"
+
+msgid "Restricted diet"
+msgstr "Dieta ristretta"
+
+msgid "Types"
+msgstr "Tipi"
+
+msgid "Type"
+msgstr "Tipo"
+
+msgid "Category"
+msgstr "Categoria"
+
+msgid "Sub-type"
+msgstr "Sottotipo"
+
+msgid "Ingredients"
+msgstr "Ingredienti"
+
+msgid "Suitable for diet"
+msgstr "Adatta alla dieta"
+
+msgid "Aphorism"
+msgstr "Aforisma"
+
+msgid "Aphorism author"
+msgstr "Autore aforisma"
+
+msgid "Cooking time"
+msgstr "Tempo di cottura"
+
+msgid "Preparation time"
+msgstr "Tempo di preparazione"
+
+msgid "Yield quantity"
+msgstr "Quantità resa"
+
+msgid "Yield unit"
+msgstr "Unità di resa"
+
+msgid "Origin"
+msgstr "Origine"
+
+msgid "Alternatives"
+msgstr "Alternative"
+
+msgid "Tips"
+msgstr "Consigli"
+
+msgid "Created"
+msgstr "Creato"
+
+msgid "Published at"
+msgstr "Pubblicato il"
+
+msgid "Modified"
+msgstr "Modificato"
+
+msgid "Published"
+msgstr "Pubblicato"
+
+msgid "Group"
+msgstr "Gruppo"
+
+msgid "Ingredient"
+msgstr "Ingrediente"
+
+msgid "Extra info"
+msgstr "Info extra"
+
+msgid "Quantity"
+msgstr "Quantità"
+
+msgid "Quantity unit"
+msgstr "Unità di quantità"
+
+msgid "Quantity extra info"
+msgstr "Info quantità extra"
+
+msgid "Step name"
+msgstr "Nome passo"
+
+msgid "Step number"
+msgstr "Numero passo"
+
+msgid "Step text"
+msgstr "Testo passo"
+
+msgid "Pastry sheet"
+msgstr "Per la sfoglia"
+
+msgid "Broth"
+msgstr "Per il brodo"
+
+msgid "Shortcrust"
+msgstr "Per la frolla"
+
+msgid "Base"
+msgstr "Per la base"
+
+msgid "Soak"
+msgstr "Per la bagna"
+
+msgid "Filling"
+msgstr "Per il ripieno"
+
+msgid "Marinade"
+msgstr "Per la marinatura"
+
+msgid "Cream"
+msgstr "Per la crema"
+
+msgid "Béchamel"
+msgstr "Per la besciamella"
+
+msgid "Topping"
+msgstr "Per la copertura"
+
+msgid "Decoration"
+msgstr "Per la decorazione"
+
+msgid "Glaze"
+msgstr "Per la glassa"
+
+msgid "Preferment"
+msgstr "Per il lievitino"
+
+msgid "Mash"
+msgstr "Per il purè"
+
+msgid "Biga"
+msgstr "Per la biga"
+
+msgid "Dough"
+msgstr "Per l'impasto"
+
+msgid "First dough"
+msgstr "Per il primo impasto"
+
+msgid "Second dough"
+msgstr "Per il secondo impasto"
+
+msgid "Frying"
+msgstr "Per friggere"
+
+msgid "Rib"
+msgstr "Costa"
+
+msgid "Ribs"
+msgstr "Coste"
+
+msgid "Pinch"
+msgstr "Pizzico"
+
+msgid "Pinches"
+msgstr "Pizzichi"
+
+msgid "Sachet"
+msgstr "Bustina"
+
+msgid "Sachets"
+msgstr "Bustine"
+
+msgid "Cube"
+msgstr "Cubetto"
+
+msgid "Cubes"
+msgstr "Cubetti"
+
+msgid "Tablespoon"
+msgstr "Cucchiaio"
+
+msgid "Tablespoons"
+msgstr "Cucchiai"
+
+msgid "Teaspoon"
+msgstr "Cucchiaino"
+
+msgid "Teaspoons"
+msgstr "Cucchiaini"
+
+msgid "Cup"
+msgstr "Tazza"
+
+msgid "Cups"
+msgstr "Tazze"
+
+msgid "Small cup"
+msgstr "Tazzina"
+
+msgid "Small cups"
+msgstr "Tazzine"
+
+msgid "Glass"
+msgstr "Bicchiere"
+
+msgid "Glasses"
+msgstr "Bicchieri"
+
+msgid "Clove"
+msgstr "Spicchio"
+
+msgid "Cloves"
+msgstr "Spicchi"
+
+msgid "Sprig"
+msgstr "Rametto"
+
+msgid "Sprigs"
+msgstr "Rametti"
+
+msgid "Leaf"
+msgstr "Foglia"
+
+msgid "Leaves"
+msgstr "Foglie"
+
+msgid "Jar"
+msgstr "Vasetto"
+
+msgid "Jars"
+msgstr "Vasetti"
+
+msgid "Slice"
+msgstr "Fetta"
+
+msgid "Slices"
+msgstr "Fette"
+
+msgid "Stick"
+msgstr "Stecca"
+
+msgid "Sticks"
+msgstr "Stecche"
+
+msgid "Calories [kcal]"
+msgstr "Calorie [kcal]"
+
+msgid "Carbohydrate [g]"
+msgstr "Carboidrati [g]"
+
+msgid "Sugar [g]"
+msgstr "Zuccheri [g]"
+
+msgid "Fat [g]"
+msgstr "Grassi [g]"
+
+msgid "Saturated fat [g]"
+msgstr "Grassi saturi [g]"
+
+msgid "Fiber [g]"
+msgstr "Fibre [g]"
+
+msgid "Cholesterol [mg]"
+msgstr "Colesterolo [mg]"
+
+msgid "Sodium (Na) [mg]"
+msgstr "Sodio (Na) [mg]"
+
+msgid "Protein [g]"
+msgstr "Proteine [g]"
+
+msgid "Potassium (K) [mg]"
+msgstr "Potassio (K) [mg]"
+
+msgid "Zinc (Zn) [mg]"
+msgstr "Zinco (Zn) [mg]"
+
+msgid "Calcium (Ca) [mg]"
+msgstr "Calcio (Ca) [mg]"
+
+msgid "Iron (Fe) [mg]"
+msgstr "Ferro (Fe) [mg]"
+
+msgid "Phosphorus (P) [mg]"
+msgstr "Fosforo (P) [mg]"
+
+msgid "Vitamin A (retinol) [μg]"
+msgstr "Vitamina A (retinolo) [μg]"
+
+msgid "Retinol equivalents [μg]"
+msgstr "Equivalenti di retinolo [μg]"
+
+msgid "Beta-carotene [μg]"
+msgstr "Beta-carotene [μg]"
+
+msgid "Vitamin B1 (thiamine) [mg]"
+msgstr "Vitamina B1 (tiamina) [mg]"
+
+msgid "Vitamin B2 (riboflavin) [mg]"
+msgstr "Vitamina B2 (riboflavina) [mg]"
+
+msgid "Vitamin B3 (niacin) [mg]"
+msgstr "Vitamina B3 (niacina) [mg]"
+
+msgid "Vitamin B6 (pyridoxine) [mg]"
+msgstr "Vitamina B6 (piridossina) [mg]"
+
+msgid "Vitamin B9 (folic acid) [μg]"
+msgstr "Vitamina B9 (acido folico) [μg]"
+
+msgid "Vitamin C (ascorbic acid) [mg]"
+msgstr "Vitamina C (acido ascorbico) [mg]"
+
+msgid "Vitamin D (cholecalciferol) [μg]"
+msgstr "Vitamina D (colecalciferolo) [μg]"
+
+msgid "Vitamin E (tocopherol) [mg]"
+msgstr "Vitamina E (tocoferolo) [mg]"
